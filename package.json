@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "html2wxml": "^2.0.1",
+    "htmltowxml": "^1.0.4"
+  }
+}
