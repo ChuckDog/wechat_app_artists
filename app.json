@@ -6,21 +6,32 @@
     "app/pages/introductions/introductions"
   ],
   "window": {
-    "navigationBarTitleText": "团队艺术家"
+    "navigationBarTitleText": "团队艺术家",
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
   },
   "tabBar": {
     "list": [{
       "pagePath": "app/pages/index/index",
-      "text": "艺术家"
+      "text": "艺术家",
+      "iconPath": "app/img/icon_component.png",
+      "selectedIconPath": "app/img/icon_component_HL.png"
     }, {
       "pagePath": "app/pages/artwork/artwork",
-      "text": "艺术品"
+      "text": "艺术品",
+      "iconPath": "app/img/icon_component.png",
+      "selectedIconPath": "app/img/icon_component_HL.png"
     }, {
       "pagePath": "app/pages/creative/creative",
-      "text": "创意"
+      "text": "创意",
+      "iconPath": "app/img/icon_component.png",
+      "selectedIconPath": "app/img/icon_component_HL.png"
     }, {
       "pagePath": "app/pages/introductions/introductions",
-      "text": "说明"
+      "text": "说明",
+      "iconPath": "app/img/icon_component.png",
+      "selectedIconPath": "app/img/icon_component_HL.png"
     }]
   },
   "networkTimeout": {

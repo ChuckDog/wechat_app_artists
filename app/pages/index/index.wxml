@@ -1,3 +1,65 @@
 <import src="../../src/html2wxml.wxml/"/>
+<import src="../common/head.wxml" />
+<import src="../common/foot.wxml" />
 
-<template is="html2Wxml" data="{{innerWxml}}"></template>
+<view class="index">
+  <view class="index-hd">
+    <image class="index-logo" src="../../img/logo.png"></image>
+    <view class="index-desc">与艺术家们合作，创作属于你们的艺术品。</view>
+  </view>
+  <view class="index-bd">
+    <view class="kind-list">
+		<block>
+			<view class="kind-list-text">
+				<view class="weui-cells__title">领域</view>
+			    <view class="weui-cells weui-cells_after-title">
+			      <view class="weui-cell weui-cell_input">
+			        <view class="weui-cell__hd">
+			          <view class="weui-label">当前领域</view>
+			        </view>
+			        <view class="weui-cell__bd">
+			          <picker bindchange="bindSpecPickerChange" value="{{artPlanType}}" range="{{specialtyArray}}">
+			            <view class="weui-input">{{specialtyArray[artPlanType]}}</view>
+			          </picker>
+			        </view>
+			      </view>
+			    </view>
+			</view>
+		</block>
+		<block>
+			<view class="kind-list-text">
+				<view class="weui-cells__title">开始日期</view>
+			    <view class="weui-cells weui-cells_after-title">
+			      <view class="weui-cell weui-cell_input">
+			        <view class="weui-cell__hd">
+			          <view class="weui-label">定时</view>
+			        </view>
+			        <view class="weui-cell__bd">
+			            <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindStartDateChange">
+			              <view class="weui-input">{{date}}</view>
+			            </picker>
+			        </view>
+			      </view>
+			    </view>
+			</view>
+		</block>
+		<block>
+			<view class="kind-list-text">
+				<view class="weui-cells__title">结束日期</view>
+			    <view class="weui-cells weui-cells_after-title">
+			      <view class="weui-cell weui-cell_input">
+			        <view class="weui-cell__hd">
+			          <view class="weui-label">定时</view>
+			        </view>
+			        <view class="weui-cell__bd">
+			            <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindEndDateChange">
+			              <view class="weui-input">{{date}}</view>
+			            </picker>
+			        </view>
+			      </view>
+			    </view>
+			</view>
+		</block>
+    </view>
+  </view>
+</view>
